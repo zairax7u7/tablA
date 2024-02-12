@@ -1,0 +1,122 @@
+@media screen and (max-width: 1499px){
+
+    /* body, html{
+        background-color: red;
+    } */
+
+    .table{
+        width: 1300px;
+    }
+    
+    .table__row{
+        font-size: 13px;
+    }
+
+    .table__row{
+        font-size: 14px;
+    }
+
+    .triangle__id::before{
+        left: -38px;
+        top: -3px;
+    }
+
+    /* Data of stdents */
+    .eyes-box{
+        width: 500px;
+        height: 600px;
+    }
+    
+    .box-icon{
+        width: 500px;
+        height: 45px;
+    }
+    
+    .icon-circle{
+        width: 35px;
+        height: 35px;
+    }
+
+    /* heder main */
+    .table-header{
+        width: 1300px;
+    }
+
+    .name-input-div{
+        background-color: #6CDB56;
+        right: 14%;
+    }
+    
+    .number-input-div{
+        background-color: #5ed7e7;
+        right: 39.8%;
+    }
+    
+    .date-input-div{
+        background-color: #f5d548;
+        right: 21.8%;
+    }
+}
+
+ @media screen and (min-width: 1501px) and (max-width: 1700px) {
+
+    /* body, html{
+        background-color: green;
+    } */
+
+    .table{
+        width: 1430px;
+        
+    } 
+
+    .table__row{
+        font-size: 17px;
+    }
+
+    .div__status-ingreso::before{
+        left: -19px;
+        bottom: 5px;
+    }
+    
+    .div__status-egreso::before{
+        left: -19px;
+        bottom: 5px;
+    }
+    
+    .triangle__id::before{
+        left: -37px;
+        top: -3px;
+    }
+
+        /* Data of stdents */
+    .eyes-box{
+        width: 500px;
+        height: 600px;
+    }
+    
+    .box-icon{
+        width: 500px;
+        height: 45px;
+    }
+    
+    .icon-circle{
+        width: 35px;
+        height: 35px;
+    }
+    .name-input-div{
+        background-color: #6CDB56;
+        right: 14%;
+    }
+    
+    .number-input-div{
+        background-color: #5ed7e7;
+        right: 39.8%;
+    }
+    
+    .date-input-div{
+        background-color: #f5d548;
+        right: 21.8%;
+    }
+}
+    
+

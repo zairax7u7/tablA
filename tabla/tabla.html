@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tabla.css">
+    <link rel="stylesheet" href="./responsive/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="active-eye active-eye-visibility" id="activeData">
+        <div class="eyes-box">
+            <div class="box-icon">
+                <div class="icon-circle" id="closeData">
+                    <img src="./resources/close.svg" alt="">
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </div>                     
+    </div>
+    <div>
+        <div class="table-header">   
+            <div class="header-search-name">
+                <input type="text" id="inputName" placeholder="Nombre del estudiante"  class="name-input">
+                <div class="circles-input-div name-input-div" id="name">
+                    <img src="./resources/profile.svg" alt="" class="divs-img">
+                </div>
+            </div>
+            <div class="header-search">
+                <input type="number" placeholder="Número de control" class="number-input">
+                <div class="circles-input-div number-input-div">
+                    <img src="./resources/control.svg" alt="">
+                </div>
+            </div>
+            <div class="header-search header-search-switch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div  class="header-search header-search-date">
+                <div class="input-date">
+                    <div class="date-calendar date-calendar-active" id="inputCalendar">
+                        <div class="calendar-month"><p>FEBRERO</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>01</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>02</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>03</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>04</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>05</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>06</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>07</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>08</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>09</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>10</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>11</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>12</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>13</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>14</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>15</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>16</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>17</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>18</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>19</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>20</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>21</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>22</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>23</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>24</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>25</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>26</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>27</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>28</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>29</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>30</p></div>
+                        <div class="calendar-numbers calendar-numbers-true"><p>31</p></div>
+                        <div class="calendar-numbers calendar-numbers-none"><p></p></div>
+                    </div>
+                </div>
+                <div class="circles-input-div date-input-div" id="calendar">
+                    <img src="./resources/calendar.svg" alt="">
+                </div>
+            </div>
+            <div class="header-search">
+                <button type="button" class="button-search">Buscar</button>
+            </div>
+        </div>
+        <table class="table">
+            <tr class="table__row">
+                <th class="table__head">id</th>
+                <th class="table__head">Matricula</th>
+                <th class="table__head">Nombre Completo</th>
+                <th class="table__head">Estatus</th>
+                <th class="table__head">Fecha</th>
+                <th class="table__head">Entrada</th>
+                <th class="table__head">Salida</th>
+                <th class="table__head">Data</th>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>01</p>
+                    </div>
+                </td>
+                <td>20100003</td>
+                <td>Jesus Hernandez Montiel</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">02</p>
+                    </div>
+                </td>
+                <td>20100012</td>
+                <td>Mezxjhakob Cyro Eduardo I Toledo Zamora</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>03</p>
+                    </div>
+                </td>
+                <td>20100019</td>
+                <td>Isis Anahid Rivera Romero</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">04</p>
+                    </div>
+                </td>
+                <td>20100033</td>
+                <td>Marco Antonio Gonzalez Castelan</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>01</p>
+                    </div>
+                </td>
+                <td>20100003</td>
+                <td>Jesus Hernandez Montiel</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">02</p>
+                    </div>
+                </td>
+                <td>20100012</td>
+                <td>Mezxjhakob Cyro Eduardo I Toledo Zamora</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>03</p>
+                    </div>
+                </td>
+                <td>20100019</td>
+                <td>Isis Anahid Rivera Romero</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">04</p>
+                    </div>
+                </td>
+                <td>20100033</td>
+                <td>Marco Antonio Gonzalez Castelan</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>01</p>
+                    </div>
+                </td>
+                <td>20100003</td>
+                <td>Jesus Hernandez Montiel</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">02</p>
+                    </div>
+                </td>
+                <td>20100012</td>
+                <td>Mezxjhakob Cyro Eduardo I Toledo Zamora</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>03</p>
+                    </div>
+                </td>
+                <td>20100019</td>
+                <td>Isis Anahid Rivera Romero</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">04</p>
+                    </div>
+                </td>
+                <td>20100033</td>
+                <td>Marco Antonio Gonzalez Castelan</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>01</p>
+                    </div>
+                </td>
+                <td>20100003</td>
+                <td>Jesus Hernandez Montiel</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">02</p>
+                    </div>
+                </td>
+                <td>20100012</td>
+                <td>Mezxjhakob Cyro Eduardo I Toledo Zamora</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover">
+                <td>
+                    <div>
+                        <p>03</p>
+                    </div>
+                </td>
+                <td>20100019</td>
+                <td>Isis Anahid Rivera Romero</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-ingreso">Ingreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td></td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr class="table__row table__row-hover status-color">
+                <td>
+                    <div class="apadt-div">
+                        <p class="triangle__id">04</p>
+                    </div>
+                </td>
+                <td>20100033</td>
+                <td>Marco Antonio Gonzalez Castelan</td>
+                <td>
+                    <div class="apadt-div">
+                        <p class="div__status-egreso">Egreso</p>
+                    </div>
+                </td>
+                <td>30/01/2024</td>
+                <td>13:00</td>
+                <td>18:00</td>
+                <td>
+                    <div class="row-button clickEyes">
+                        <img src="./resources/eyes.svg" alt="">
+                    </div>
+                </td>
+            </tr>
+            
+            
+            
+        </table>
+    </div>
+
+    <script src="./tabla.js"></script>
+</body>
+</html>
